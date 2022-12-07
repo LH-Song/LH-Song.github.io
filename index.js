@@ -1,5 +1,5 @@
 import './index.css'
-import { typeWrite, changeNavBg, navbar, scrollContainer } from './src/js/common'
+import { typeWrite, changeNavBg, navbar, scrollContainer } from './src/js/common.js'
 
 window.addEventListener('load', typeWrite)
 navbar.addEventListener('scroll', changeNavBg)
