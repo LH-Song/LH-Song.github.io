@@ -1,4 +1,4 @@
-import './index.css'
+// import './index.css'
 import { typeWrite, changeNavBg, navbar, scrollContainer } from './src/js/common.js'
 
 window.addEventListener('load', typeWrite)
