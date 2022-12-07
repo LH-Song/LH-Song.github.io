@@ -297,13 +297,19 @@ body {
             flex-wrap: wrap;
             gap: 2em;
             height: 60vh;
+            // @media screen and (max-width:40em){
+            //   .clo {
+            //     flex-direction: column;
+            //     display: flex;
+            // }
             .clo {
               text-align: left;
               display: flex;
-
+              flex-direction: column;
+              gap: 1em;
               font-size: 0.6em;
               max-width: 30%;
-              max-height: 50%;
+              min-height: 40%;
               // height: auto;
               // width: auto;
               p,
