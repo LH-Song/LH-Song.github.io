@@ -177,7 +177,7 @@ body {
             height: auto;
             width: auto;
             box-shadow: 2rem;
-            border-radius: 9rem;
+            border-radius: 4rem;
 
             z-index: 1;
             opacity: 0.88;
@@ -283,22 +283,35 @@ body {
         background-position: center;
         background-size: cover;
         #services-wrapper {
+          color: black;
+          #services-heading {
+            margin-bottom: 2em;
+            h1 {
+              font-family: 'Poppins', sans-serif;
+              font-size: 3rem;
+            }
+          }
           #services-divs {
             display: flex;
-            gap: 1em;
-
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2em;
+            height: 60vh;
             .clo {
-              flex-direction: row;
+              text-align: left;
               display: flex;
-              flex-wrap: wrap;
+
               font-size: 0.6em;
-              min-width: 5%;
+              max-width: 30%;
               max-height: 50%;
-              height: auto;
-              width: auto;
+              // height: auto;
+              // width: auto;
               p,
               h4 {
                 display: inline-block;
+              }
+              h4 {
+                font-weight: bolder;
               }
               i {
                 color: brown;
