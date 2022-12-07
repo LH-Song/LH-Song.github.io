@@ -1,6 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins:ital,wght@1,900&display=swap';
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -228,12 +227,12 @@ body #main #group-services .mid_layer #services-wrapper #services-divs {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2em;
-  height: 60vh;
+  height: auto;
 }
 body #main #group-services .mid_layer #services-wrapper #services-divs .clo {
   text-align: left;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1em;
   font-size: 0.6em;
   max-width: 30%;

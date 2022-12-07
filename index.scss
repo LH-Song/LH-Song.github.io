@@ -296,7 +296,8 @@ body {
             justify-content: center;
             flex-wrap: wrap;
             gap: 2em;
-            height: 60vh;
+            height: auto;
+
             // @media screen and (max-width:40em){
             //   .clo {
             //     flex-direction: column;
@@ -305,7 +306,7 @@ body {
             .clo {
               text-align: left;
               display: flex;
-              flex-direction: column;
+              flex-direction: row;
               gap: 1em;
               font-size: 0.6em;
               max-width: 30%;
