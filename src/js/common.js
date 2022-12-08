@@ -1,7 +1,7 @@
 // --- autoTypedText Method ONE Start---//
 
 const textEl = document.getElementById('type-writer')
-const text = 'Hello, I Am Miku Shen'
+const text = 'Experience a Premium Banking Service with HSBC'
 
 let idx = 1
 let speed = 300
@@ -17,14 +17,14 @@ export function typeWrite() {
 
   setTimeout(typeWrite, speed)
 }
-export const navbar = document.getElementById('navbar')
+const navbar = document.getElementById('navbar')
 export const scrollContainer = document.getElementById('main')
 export function changeNavBg() {
   const scrollValue = scrollContainer.scrollTop
   if (scrollValue < 50) {
-    navbar.classList.remove('navbar-bg')
+    navbar.classList.remove('nav-bg')
   } else {
-    navbar.classList.add('navbar-bg')
+    navbar.classList.add('nav-bg')
   }
   console.log(scrollValue)
 }
