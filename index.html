@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Vite App</title>
   </head>
-  <body>
-    <header id="navbar" >
+  <body id="main">
+    <aside></aside>
+    <!-- Header  -->
+    <header id="navbar" class="nav-bg">
       <div id="top-logo">
         <img src="./src/img/logo.png" />
         <a href="index.html">M<span>I</span>KU SHEN</a>
@@ -29,102 +37,254 @@
         <a href=""><i class="uil uil-instagram-alt"></i></a>
       </div>
     </header>
-    <!-- 
-      
 
-     -->
-    <div class="parallax_wrapper" id="main">
-      <!--  -->
+    <!-- sect1 Intro_page_background -->
+    <section></section>
 
-      <!--  -->
+    <!-- sect2 AboutSection_img -->
+    <section>
+      <div id="about-img">
+        <img src="./src/img/4.jpeg" />
+      </div>
+    </section>
 
-      <!--  -->
-      <div class="parallax_group intro_screen" id="intro">
-        <!-- parallax_group intro_screen -->
+    <!-- sect3 AboutSection_content -->
+    <section>
+      <div id="about-content">
+        <h2>About Me</h2>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+          atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+          sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+          facilis est et expedita distinctio.
+        </p>
+        <span>My Skills</span>
+      </div>
+    </section>
+
+    <!-- sect4 Services_Page_Header -->
+    <section>
+      <div>
+        <h2>Our Services</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+      </div>
+    </section>
+
+    <!-- sect5 service_1 -->
+    <section class="servers_items">
+      <div>
+        <div><i class="uil uil-credit-card"></i></div>
+        <div>
+          <h3>HSBC Premier</h3>
+          <p>
+            Interest at 3.75% p.a. Interest at 3.75% p.a. Find out more about HSBC Everyday Savings Account Get this
+            great rate for 3 months
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- sect6 service_2 -->
+    <section class="servers_items">
+      <div>
+        <div><i class="uil uil-chart-line"></i></div>
+        <div>
+          <h3>Insurance</h3>
+          <p>
+            Interest at 3.75% p.a. Interest at 3.75% p.a. Find out more about HSBC Everyday Savings Account Get this
+            great rate for 3 months
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- sect7 service_3 -->
+    <section class="servers_items">
+      <div>
+        <div><i class="uil uil-estate"></i></div>
+        <div>
+          <h3>Buying property</h3>
+          <p>
+            Interest at 3.75% p.a. Interest at 3.75% p.a. Find out more about HSBC Everyday Savings Account Get this
+            great rate for 3 months
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- sect8 service_4 -->
+    <section class="servers_items">
+      <div>
+        <div><i class="uil uil-comment-dots"></i></div>
+        <div>
+          <h3>Invest Products</h3>
+          <p>
+            Interest at 3.75% p.a. Interest at 3.75% p.a. Find out more about HSBC Everyday Savings Account Get this
+            great rate for 3 months
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- sect9 service_5 -->
+    <section class="servers_items">
+      <div>
+        <div><i class="uil uil-cloud-check"></i></div>
+        <div>
+          <h3>Online Trading</h3>
+          <p>
+            Interest at 3.75% p.a. Interest at 3.75% p.a. Find out more about HSBC Everyday Savings Account Get this
+            great rate for 3 months
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- sect10 service_6 -->
+    <section class="servers_items">
+      <div>
+        <div><i class="uil uil-usd-circle"></i></div>
+        <div>
+          <h3>Interest free</h3>
+          <p>
+            Interest at 3.75% p.a. Interest at 3.75% p.a. Find out more about HSBC Everyday Savings Account Get this
+            great rate for 3 months
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- sect11 HireMe -->
+    <section>
+      <div>
+        <h2>Banking With Us?</h2>
+        <span><a href="#">Contant Me</a></span>
+      </div>
+    </section>
+
+    <!-- sect12 Testimonials_Header -->
+    <section>
+      <div>
+        <h2>Testimonials</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials_Content -->
+    <section>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="/src/img/5.jpg" class=" " id="testimonials-content-img" />
+            <div class="carousel-caption">
+              <i class="uil uil-comment"></i>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <h5>First slide label</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./src/img/6.jpg" class=" " id="testimonials-content-img" />
+            <div class="carousel-caption">
+              <i class="uil uil-comment"></i>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <h5>Second slide label</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./src/img/7.jpg" class="w-20" id="testimonials-content-img" />
+            <div class="carousel-caption">
+              <i class="uil uil-comment"></i>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <h5>Second slide label</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- sect14 Portfolio_Header -->
+    <section>
+      <div>
+        <h2>Our Services</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+      </div>
+    </section>
+
+    <section>sect15 Blog_Header</section>
+    <section>sect16 Blog_Item_1</section>
+    <section>sect17 Blog_Item_2</section>
+    <section>sect18 Blog_Item_3</section>
+    <section>sect19 Contact_Us_Header</section>
+    <section>sect20 Contact_Us_Form_1</section>
+    <section>sect21 Contact_Us_Form_2</section>
+    <section>sect22 Contact_Us_Form_Item_1</section>
+    <section>sect23 Contact_Us_Form_Item_2</section>
+    <section>sect24 Contact_Us_Form_Item_3</section>
+
+    <!-- sect1-1 Intro_page_background_Gap -->
+    <section>
+      <div class="sectiong_group" id="intro">
         <h1>Welcome</h1>
         <div id="type-writer"></div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.
         </p>
-        <a href="section-about" id="btn-about-me">About Me</a>
+        <a href="#" id="btn-about-me">About Me</a>
       </div>
-      <!--  -->
+    </section>
 
-      <div class="parallax_layer base_layer" id="bg">Base Layer Page1</div>
-      <!--  -->
+    <footer></footer>
 
-      <!-- about -->
-      <div class="parallax_group" id="group-home">
-        <div class="parallax_layer mid_layer">
-          ler
-
-          <div>
-            <div>
-              <div></div>
-              <div></div>
-            </div>
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 
-        
-       -->
-      <div class="parallax_group" id="group-2">
-        <div class="parallax_layer mid_layer">Mid Layer Page2</div>
-        <!-- <div class="parallax_layer base_layer">Base Layer Page2</div> -->
-      </div>
-      <!-- 
-
-       -->
-      <div class="parallax_group" id="group-block-mid-layer">
-        <div>
-          <div id="tt"></div>
-        </div>
-        <!-- <div class="parallax_layer base_layer">Base Layer Page blocker</div> -->
-        <div class="parallax_layer mid_layer">
-          <div id="1">
-            <div id="2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta temporibus quibusdam at esse iat recusandae
-              vodluptatibus ex, unde odio consequatur nisi error debitis nesciunt! Minima ea recusandae vodluptatibus
-              ex, unde odio consequatur nisi error debitis nesciunt! Minima eaque soluta autem! Adipiisi error debitis
-              nesciunt! Minima ea recusandae vodluptatibus ex, unde odio consequatur nisi error debitis nesciunt! Minima
-              eaque soluta autem! Adipisci, eius.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="parallax_group" id="group-3">
-        <div class="parallax_layer mid_layer">Mid Layer Page3</div>
-        <!-- <div class="parallax_layer base_layer">Base Layer Page3</div> -->
-      </div>
-
-      <div class="parallax_group" id="group-4">
-        <div class="parallax_layer mid_layer">Mid Layer Page4</div>
-        <!-- <div class="parallax_layer base_layer">Base Layer Page4</div> -->
-      </div>
-
-      <div class="parallax_group" id="group-5">
-        <div class="parallax_layer mid_layer">Mid Layer Page5</div>
-        <!-- <div class="parallax_layer base_layer">Base Layer Page5</div> -->
-      </div>
-
-      <div class="parallax_group" id="group-6">
-        <div class="parallax_layer mid_layer">Mid Layer Page6</div>
-        <!-- <div class="parallax_layer base_layer">Base Layer Page6</div> -->
-      </div>
-
-      <div class="parallax_group outro_screen" id="outro">the end</div>
-    </div>
     <script type="module" src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
   </body>
 </html>
