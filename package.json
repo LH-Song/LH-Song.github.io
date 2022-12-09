@@ -1,5 +1,5 @@
 {
-  "name": "lh-song-github-io",
+  "name": "jr-project-one-4-0-2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3"
   }
 }
