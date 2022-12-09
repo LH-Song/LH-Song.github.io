@@ -20,6 +20,7 @@ export function typeWrite() {
 const navbar = document.getElementById('navbar')
 export const scrollContainer = document.getElementById('main')
 export function changeNavBg() {
+  // const scrollValue = scrollContainer.scrollTop
   const scrollValue = scrollContainer.scrollTop
   if (scrollValue < 50) {
     navbar.classList.remove('nav-bg')
