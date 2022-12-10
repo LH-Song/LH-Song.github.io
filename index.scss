@@ -210,9 +210,10 @@ section:nth-of-type(3) {
 }
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect4 Services_Page_Header ⬇️⬇️⬇️⬇️⬇️⬇️ -->
-// same_headerStyle_services-testimonials-blog
+// same_headerStyle-sect4,15,19
 section:nth-of-type(4),
-section:nth-of-type(15) {
+section:nth-of-type(15),
+section:nth-of-type(19) {
   // sect4 Services_Page_Header
   grid-area: sect4;
   // sect4 Services_Page_Header
@@ -507,17 +508,35 @@ section:nth-of-type(18) {
 // <!-- ⬆️⬆️⬆️⬆️⬆️⬆️ sect16,17,18 Blog_Item_1-2-3 ⬆️⬆️⬆️⬆️⬆️⬆️ -->
 // <!-- ✅✅✅✅✅✅ ✅✅✅✅✅✅ -->
 
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect19 Contact_Us_Header ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(19) {
   grid-area: sect19;
-  background-color: #1060b1;
+  // background-color: #1060b1;
 }
+
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect20 Contact_Us_Form_1 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(20) {
+  width: 100%;
+  height: 30vh;
+
   grid-area: sect20;
-  background-color: #1060b1;
+  background-color: rgba(25, 25, 25, 1);
 }
+
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect21 Contact_Us_Form_2 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(21) {
+  width: 100%;
+  height: 30vh;
   grid-area: sect21;
-  background-color: #1060b1;
+  background-color: rgba(25, 25, 25, 1);
+}
+
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect27 Contact_Us_Form_Button ⬇️⬇️⬇️⬇️⬇️⬇️ -->
+section:nth-of-type(27) {
+  width: 100%;
+  height: 5vh;
+  grid-area: sect27;
+  background-color: rgba(25, 25, 25, 1);
 }
 section:nth-of-type(22) {
   grid-area: sect22;
@@ -552,7 +571,7 @@ body {
   grid-template-areas:
     'sidebar header'
     'sidebar sect1'
-    'sidebar sect25'
+    'sidebar sect25' //sect25 add
     'sidebar sect2'
     'sidebar sect3'
     'sidebar sect4'
@@ -566,7 +585,7 @@ body {
     'sidebar sect12'
     'sidebar sect13'
     'sidebar sect14'
-    'sidebar sect26'
+    'sidebar sect26' //sect26 add
     'sidebar sect15'
     'sidebar sect16'
     'sidebar sect17'
@@ -574,6 +593,7 @@ body {
     'sidebar sect19'
     'sidebar sect20'
     'sidebar sect21'
+    'sidebar sect27' //sect27 add
     'sidebar sect22'
     'sidebar sect23'
     'sidebar sect24'
@@ -652,7 +672,7 @@ body {
     grid-template-areas:
       'sidebar header header header header header header'
       'sidebar sect1 sect1 sect1 sect1 sect1 sect1'
-      'sidebar sect25 sect25 sect25 sect25 sect25 sect25'
+      'sidebar sect25 sect25 sect25 sect25 sect25 sect25' //add25
       'sidebar sect2 sect2 sect2 sect3 sect3 sect3 '
       'sidebar sect4 sect4 sect4 sect4 sect4 sect4'
       'sidebar sect5 sect5 sect6 sect6 sect7 sect7'
@@ -661,11 +681,12 @@ body {
       'sidebar sect12 sect12 sect12 sect12 sect12 sect12'
       'sidebar sect13 sect13 sect13 sect13 sect13 sect13'
       'sidebar sect14 sect14 sect14 sect14 sect14 sect14'
-      'sidebar sect26 sect26 sect26 sect26 sect26 sect26'
+      'sidebar sect26 sect26 sect26 sect26 sect26 sect26' //add26
       'sidebar sect15 sect15 sect15 sect15 sect15 sect15'
       'sidebar sect16 sect16 sect17 sect17 sect18 sect18'
       'sidebar sect19 sect19 sect19 sect19 sect19 sect19'
       'sidebar sect20 sect20 sect20 sect21 sect21 sect21'
+      'sidebar sect27 sect27 sect27 sect27 sect27 sect27' //add27
       'sidebar sect22 sect22 sect23 sect23 sect24 sect24'
       'sidebar footer footer footer footer footer footer';
   }
