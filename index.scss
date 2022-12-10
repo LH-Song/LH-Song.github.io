@@ -157,9 +157,7 @@ section:nth-of-type(25) {
 section:nth-of-type(2) {
   width: 100%;
   height: auto;
-  // sect2 AboutSection_img
   grid-area: sect2;
-  // sect2 AboutSection_img
   background-color: rgb(40, 40, 40);
   @include align-center;
   // margin: 1em;
