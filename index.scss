@@ -1,8 +1,8 @@
 //<!-- commont C&P -->//
-//<!-- ⬇️⬇️⬇️⬇️⬇️⬇️ ⬇️⬇️⬇️⬇️⬇️⬇️ -->//
-//<!-- ⬆️⬆️⬆️⬆️⬆️⬆️ ⬆️⬆️⬆️⬆️⬆️⬆️ -->//
-//<!-- ⛔️⛔️⛔️⛔️⛔️⛔️ ⛔️⛔️⛔️⛔️⛔️⛔️ -->//
-//<!-- ✅✅✅✅✅✅ ✅✅✅✅✅✅ -->//
+//<!-- ⬇️⬇️⬇️⬇️⬇️⬇️ ⬇️⬇️⬇️⬇️⬇️⬇️ -->
+//<!-- ⬆️⬆️⬆️⬆️⬆️⬆️ ⬆️⬆️⬆️⬆️⬆️⬆️ -->
+//<!-- ⛔️⛔️⛔️⛔️⛔️⛔️ ⛔️⛔️⛔️⛔️⛔️⛔️ -->
+//<!-- ✅✅✅✅✅✅ ✅✅✅✅✅✅ -->
 //<!-- commont C&P -->//
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&family=Nunito+Sans&family=Oswald:wght@500&display=swap');
 /////////////////////////font/////////////////////////////////
-//////////////////////////////////////////////////////////////
+
 a,
 *,
 *::after,
@@ -51,6 +51,7 @@ html {
   overflow-y: scroll;
 }
 ////////////////////////////////////////////////////////////////////
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ aside ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 aside {
   position: sticky;
   max-width: 10vw;
@@ -60,6 +61,7 @@ aside {
   background-color: #0080ff;
 }
 
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect1 Intro_page_background  ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(1) {
   // sect1 Intro_page_background
   grid-area: sect1;
@@ -76,6 +78,9 @@ section:nth-of-type(1) {
   background-color: #1f72c5;
 }
 
+// <!-- ⛔️⛔️⛔️⛔️⛔️⛔️ ⛔️⛔️⛔️⛔️⛔️⛔️ -->
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ added new sctions ⬇️⬇️⬇️⬇️⬇️⬇️ -->
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect25 Intro_page_background_Gap ⬇️⬇️⬇️⬇️⬇️⬇️
 section:nth-of-type(25) {
   // sect25 Intro_page_background_Gap
   grid-area: sect25;
@@ -141,6 +146,7 @@ section:nth-of-type(25) {
   }
 }
 
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect2 AboutSection_img  ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(2) {
   width: 100%;
   height: auto;
@@ -161,13 +167,9 @@ section:nth-of-type(2) {
       border-radius: 0.3em;
     }
   }
-
-  // background-image: url('/src/img/4.jpeg');
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // border-radius: 0.8em;
 }
+
+//  <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect3 AboutSection_content  ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(3) {
   // sect3 AboutSection_content
   grid-area: sect3;
@@ -206,6 +208,8 @@ section:nth-of-type(3) {
     }
   }
 }
+
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect4 Services_Page_Header ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 // same_headerStyle_services-testimonials-blog
 section:nth-of-type(4),
 section:nth-of-type(15) {
@@ -230,6 +234,8 @@ section:nth-of-type(15) {
   }
 }
 
+// <!-- ✅✅✅✅✅✅ ✅✅✅✅✅✅ -->
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect5-10 service_1-6 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(5) {
   // sect5 service_1
   grid-area: sect5;
@@ -267,8 +273,7 @@ section:nth-of-type(10) {
   // sect10 service_6
   // background-color: #1060b1;
 }
-////////////////////////////////////////////
-////////////   section 5-10    /////////////
+
 .servers_items {
   max-height: 30vh;
   max-width: auto;
@@ -299,10 +304,10 @@ section:nth-of-type(10) {
     }
   }
 }
+// <!-- ⬆️⬆️⬆️⬆️⬆️⬆️ sect5-10 service_1-6 ⬆️⬆️⬆️⬆️⬆️⬆️ -->
+// <!-- ✅✅✅✅✅✅ ✅✅✅✅✅✅ -->
 
-///////////////   section 5-10   ////////////
-/////////////////////////////////////////////
-
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect11 HireMe ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(11) {
   width: 10vw;
   height: auto;
@@ -339,6 +344,7 @@ section:nth-of-type(11) {
   }
 }
 
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect12 Testimonials_Header ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(12) {
   // sect12 Testimonials_Header
   grid-area: sect12;
@@ -361,6 +367,7 @@ section:nth-of-type(12) {
   }
 }
 
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect13 Testimonials_Content ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(13) {
   // Testimonials_Content
   grid-area: sect13;
@@ -401,7 +408,7 @@ section:nth-of-type(13) {
   border-radius: 0 0 30% 30%;
 }
 
-//
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect14 Portfolio_Header ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(14) {
   position: relative;
   // sect14 Portfolio_Header
@@ -436,6 +443,9 @@ section:nth-of-type(14) {
   flex-direction: column;
 }
 
+// <!-- ⛔️⛔️⛔️⛔️⛔️⛔️ ⛔️⛔️⛔️⛔️⛔️⛔️ -->
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ added new sctions ⬇️⬇️⬇️⬇️⬇️⬇️ -->
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect26 Portfolio_main ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(26) {
   grid-area: sect26;
   background-color: #1060b1;
@@ -446,13 +456,15 @@ section:nth-of-type(26) {
     @include align-center();
   }
 }
-// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect15 Blog_Header ⬇️⬇️⬇️⬇️⬇️⬇️ -->//
+
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect15 Blog_Header ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(15) {
   grid-area: sect15;
   background-color: rgba(40, 40, 40, 1);
 }
 
-// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect16-17-18 Blog_Item_1-2-3 ⬇️⬇️⬇️⬇️⬇️⬇️ -->//
+// <!-- ✅✅✅✅✅✅ ✅✅✅✅✅✅ -->
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect16,17,18 Blog_Item_1-2-3 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(16),
 section:nth-of-type(17),
 section:nth-of-type(18) {
@@ -472,14 +484,13 @@ section:nth-of-type(18) {
       font-size: 0.7em;
       text-align: center;
     }
-    h2{
+    h2 {
       text-align: center;
       margin: 1.5em 0;
     }
     .blog-img {
       img {
         width: 100%;
-        
       }
     }
   }
@@ -492,7 +503,8 @@ section:nth-of-type(18) {
   grid-area: sect18;
   // background-color: #1060b1;
 }
-//<!-- ⬆️⬆️⬆️⬆️⬆️⬆️ sect16-17-18 Blog_Item_1-2-3 ⬆️⬆️⬆️⬆️⬆️⬆️ -->//
+// <!-- ⬆️⬆️⬆️⬆️⬆️⬆️ sect16,17,18 Blog_Item_1-2-3 ⬆️⬆️⬆️⬆️⬆️⬆️ -->
+// <!-- ✅✅✅✅✅✅ ✅✅✅✅✅✅ -->
 
 section:nth-of-type(19) {
   grid-area: sect19;
