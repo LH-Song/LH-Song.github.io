@@ -39,6 +39,15 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+@mixin span-button {
+  font-size: 0.8em;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 1em;
+  border: 0.15em rgba(192, 192, 192, 0.6) solid;
+  padding: 0.1em 1em;
+  margin-top: 1em;
+}
 
 body,
 html {
@@ -82,10 +91,7 @@ section:nth-of-type(1) {
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ added new sctions ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect25 Intro_page_background_Gap ⬇️⬇️⬇️⬇️⬇️⬇️
 section:nth-of-type(25) {
-  // sect25 Intro_page_background_Gap
   grid-area: sect25;
-  // sect25 Intro_page_background_Gap
-
   @include align-center;
   text-align: center;
   width: 100vw;
@@ -110,12 +116,13 @@ section:nth-of-type(25) {
       font-size: 0.6em;
     }
     a {
+      font-size: 0.8em;
       display: inline-block;
       background-color: rgba(0, 0, 0, 0);
-      border-radius: 15px;
+      border-radius: 1em;
       border: 0.15em rgba(192, 192, 192, 0.6) solid;
-      padding: 0.2em 0.8em;
-      margin-top: 1.4em;
+      padding: 0.1em 1em;
+      margin-top: 1em;
     }
   }
   @media (max-height: 40em), (max-width: 40em) {
@@ -194,17 +201,9 @@ section:nth-of-type(3) {
       text-align: center;
     }
     span {
-      text-align: center;
-      display: inline-block;
-      background-color: rgba(0, 0, 0, 0);
-      border-radius: 15px;
-      border: 0.15em silver solid;
-      font-family: 'Nunito', Helvetica, Arial, sans-serif;
-      padding: 0.35em;
-      min-width: 9em;
-      max-width: 14em;
-      width: 11em;
-      margin: 1em 0;
+      @include span-button();
+      font-size: 1em;
+      margin-bottom: 1em;
     }
   }
 }
@@ -238,77 +237,73 @@ section:nth-of-type(19) {
 // <!-- ✅✅✅✅✅✅ ✅✅✅✅✅✅ -->
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect5-10 service_1-6 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(5) {
-  // sect5 service_1
   grid-area: sect5;
-  // sect5 service_1
-  // background-color: #1060b1;
+  height: auto;
+  width: 100%;
 }
 
 section:nth-of-type(6) {
-  // sect6 service_2
   grid-area: sect6;
-  // sect6 service_2
-  // background-color: #1060b1;
+  height: auto;
+  width: 100%;
 }
 section:nth-of-type(7) {
-  // sect7 service_3
   grid-area: sect7;
-  // sect7 service_3
-  // background-color: #1060b1;
+  height: auto;
+  width: 100%;
 }
 section:nth-of-type(8) {
-  // sect8 service_4
   grid-area: sect8;
-  // sect8 service_4
-  // background-color: #1060b1;
+  height: auto;
+  width: 100%;
 }
 section:nth-of-type(9) {
-  // sect9 service_5
   grid-area: sect9;
-  // sect9 service_5
-  // background-color: #1060b1;
+  height: auto;
+  width: 100%;
 }
 section:nth-of-type(10) {
-  // sect10 service_6
   grid-area: sect10;
-  // sect10 service_6
-  // background-color: #1060b1;
+  height: auto;
+  width: 100%;
 }
 
 .servers_items {
-  max-height: 30vh;
-  max-width: auto;
-  padding: 0.5em 0.5em 2em 0.5em;
-  font-size: 0.5em;
+  gap: 0.5em;
+  height: 100%;
+  width: 100%;
+  padding: 0.2em 0.5em 0.6em 0.2em;
+  font-size: 1em;
   background-color: rgba(25, 25, 25, 1);
-
-  :first-child {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
-    @include align-center;
-    i {
-      font-size: 4em;
-      min-width: 10em;
-      padding: 0 1em;
-    }
-    h3 {
-      display: inline-block;
-      align-self: left;
-      font-size: 1.7em;
-      white-space: none;
-    }
-    p {
-      display: inline-block;
-      margin: 0 0.5em 0.3em 0.3em;
-    }
+  display: flex;
+  flex-direction: row;
+  i {
+    font-size: 2em;
+    color: brown;
   }
+  h3 {
+    font-size: 1em;
+  }
+  .service-preview {
+    font-size: 0.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  //<!-- ⛔️⛔️⛔️⛔️⛔️⛔️ Try_It_later⛔️⛔️⛔️⛔️⛔️⛔️ -->
+  // .servers_items_continue > *:not(:first-child) {
+  //   margin-block-start: 0%;
+  //   color: #59e015;
+  // }
+  //<!-- ⛔️⛔️⛔️⛔️⛔️⛔️ Try_It_later⛔️⛔️⛔️⛔️⛔️⛔️ -->
 }
+
 // <!-- ⬆️⬆️⬆️⬆️⬆️⬆️ sect5-10 service_1-6 ⬆️⬆️⬆️⬆️⬆️⬆️ -->
 // <!-- ✅✅✅✅✅✅ ✅✅✅✅✅✅ -->
 
-// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect11 HireMe ⬇️⬇️⬇️⬇️⬇️⬇️ -->
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect11 bank_with_us ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(11) {
   width: 10vw;
   height: auto;
@@ -326,36 +321,22 @@ section:nth-of-type(11) {
       font-size: 2em;
       font-family: 'Exo', sans-serif;
     }
-    h2,
     span {
-      display: inline-block;
-    }
-    span {
-      text-align: center;
-      display: inline-block;
-      background-color: rgba(0, 0, 0, 0);
-      border-radius: 15px;
-      border: 0.15em silver solid;
-      font-family: 'Nunito', Helvetica, Arial, sans-serif;
-      padding: 0.15em 0.3em;
-      height: auto;
-      max-width: 10em;
-      margin-top: 1em;
+      @include span-button();
     }
   }
 }
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect12 Testimonials_Header ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(12) {
-  // sect12 Testimonials_Header
   grid-area: sect12;
-  // sect12 Testimonials_Header
+  width: 100%;
   background-color: rgba(40, 40, 40, 1);
   @include align-center;
   padding: 1em 0 1em;
   div {
     text-align: center;
-    max-width: 75vw;
+
     @include align-center;
     flex-direction: column;
     h2 {
@@ -370,9 +351,7 @@ section:nth-of-type(12) {
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect13 Testimonials_Content ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(13) {
-  // Testimonials_Content
   grid-area: sect13;
-  // Testimonials_Content
   width: 100vw;
   height: auto;
 
@@ -393,6 +372,10 @@ section:nth-of-type(13) {
         }
         p {
           font-size: 1em;
+        }
+        i {
+          color: brown;
+          font-size: 1.5em;
         }
       }
     }
@@ -518,9 +501,12 @@ section:nth-of-type(19) {
 section:nth-of-type(20) {
   width: 100%;
   height: 30vh;
-
   grid-area: sect20;
   background-color: rgba(25, 25, 25, 1);
+  @include align-center();
+  div {
+    margin: 1em 0;
+  }
 }
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect21 Contact_Us_Form_2 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
@@ -529,6 +515,7 @@ section:nth-of-type(21) {
   height: 30vh;
   grid-area: sect21;
   background-color: rgba(25, 25, 25, 1);
+  @include align-center();
 }
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect27 Contact_Us_Form_Button ⬇️⬇️⬇️⬇️⬇️⬇️ -->
@@ -537,23 +524,91 @@ section:nth-of-type(27) {
   height: 5vh;
   grid-area: sect27;
   background-color: rgba(25, 25, 25, 1);
+  div {
+    width: 100%;
+    height: auto;
+    @include align-center();
+    span {
+      text-align: center;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0);
+      border-radius: 15px;
+      border: 0.15em silver solid;
+      font-family: 'Nunito', Helvetica, Arial, sans-serif;
+      padding: 0.15em 1.2em;
+      height: auto;
+      max-width: 12em;
+      margin-top: 1em;
+      font-size: 0.6em;
+
+      button {
+        background-color: rgba(25, 25, 25, 1);
+      }
+    }
+  }
 }
-section:nth-of-type(22) {
+
+// <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect22-24 Contact_Form_Item_1-3 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
+section:nth-of-type(22),
+section:nth-of-type(23),
+section:nth-of-type(24) {
   grid-area: sect22;
-  background-color: #1060b1;
+  background-color: rgba(25, 25, 25, 1);
+  div {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    @include align-center();
+    flex-direction: column;
+    i,
+    h2,
+    p {
+      margin: 0.2em;
+      display: inline-block;
+    }
+    p {
+      font-size: 0.4em;
+    }
+    i {
+      font-size: 1.5em;
+      color: brown;
+    }
+  }
 }
 section:nth-of-type(23) {
   grid-area: sect23;
-  background-color: #1060b1;
+  // background-color: #1060b1;
 }
 section:nth-of-type(24) {
   grid-area: sect24;
-  background-color: #1060b1;
+  // background-color: #1060b1;
 }
+// <!-- ⬆️⬆️⬆️⬆️⬆️⬆️ sect22-24 Contact_Form_Item_1-3 ⬆️⬆️⬆️⬆️⬆️⬆️ -->
 
 footer {
   grid-area: footer;
-  background-color: #588ec3;
+  background-color: silver;
+  color: brown;
+  height: 100%;
+  font-size: 0.8em;
+  div {
+    max-height: 2%;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      margin-top: 1vh;
+      display: block;
+      font-size: 0.5em;
+    }
+    #footer_icons {
+      i {
+        margin: 0 0.3em;
+        color: brown;
+      }
+    }
+  }
 }
 ////////////////////////////////////////////////////////////////////
 body {
@@ -600,7 +655,7 @@ body {
     'sidebar footer';
 }
 
-@media only screen and (min-width: 33em) {
+@media only screen and (min-width: 35em) {
   body {
     header {
       // Header
