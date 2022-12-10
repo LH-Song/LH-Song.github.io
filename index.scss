@@ -62,12 +62,21 @@ html {
 ////////////////////////////////////////////////////////////////////
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ aside ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 aside {
-  position: sticky;
-  max-width: 10vw;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 3vw;
+  height: 100%;
   // sidebar
   grid-area: sidebar;
   // sidebar
-  background-color: #0080ff;
+  margin-top: 1vh;
+  background-color: #0080ff00;
+  .uil {
+    color: silver;
+    margin-left: 0.5vw;
+    opacity: 0.9;
+  }
 }
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect1 Intro_page_background  ⬇️⬇️⬇️⬇️⬇️⬇️ -->
@@ -267,10 +276,11 @@ section:nth-of-type(10) {
 }
 
 .servers_items {
+ 
   gap: 0.5em;
   height: 100%;
   width: 100%;
-  padding: 0.2em 0.5em 0.6em 0.2em;
+  padding: 0.2em 0.5em 0.6em 1.4em;
   font-size: 1em;
   background-color: rgba(25, 25, 25, 1);
   display: flex;
@@ -616,7 +626,8 @@ body {
   // header{display: none;}
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 3vw 1fr;
+  grid-template-columns: 0 1fr;
+
   header {
     display: none;
   }
@@ -655,6 +666,9 @@ body {
 
 @media only screen and (min-width: 35em) {
   body {
+    aside {
+      display: none;
+    }
     header {
       // Header
       grid-area: header;
