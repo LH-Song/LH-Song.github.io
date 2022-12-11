@@ -507,26 +507,56 @@ section:nth-of-type(19) {
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect20 Contact_Us_Form_1 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(20) {
+  font-size: 0.5em;
   width: auto;
   height: 100%;
   grid-area: sect20;
   background-color: rgba(25, 25, 25, 1);
-  
-  div {
-    margin: 1em 0;
+
+  #form-wrapper {
+    margin-top: 1em;
+
     @include align-center();
     flex-direction: column;
+    gap: 2em;
+    .form {
+      padding: 01;
+      display: flex;
+      flex-direction: column;
+    }
   }
-
 }
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect21 Contact_Us_Form_2 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(21) {
+  font-size: 0.5em;
   width: 100%;
-  height: 30vh;
+  height: auto;
+  top: 0;
   grid-area: sect21;
   background-color: rgba(25, 25, 25, 1);
+  
   @include align-center();
+  div {
+    @include align-center();
+
+    width: 99%;
+    height: 100%;
+    max-width: 70%;
+    border: silver 1px solid;
+    border-radius: 1em;
+
+    #form-textarea {
+      margin: 2em;
+      height: 100%;
+      width: 30vw;
+      overflow: hidden;
+     
+      
+
+      background-color:  rgba(25, 25, 25, 1);
+    }
+  }
 }
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect27 Contact_Us_Form_Button ⬇️⬇️⬇️⬇️⬇️⬇️ -->
@@ -549,7 +579,7 @@ section:nth-of-type(27) {
       padding: 0.15em 1.2em;
       height: auto;
       max-width: 12em;
-      margin-top: 1em;
+      margin-top: 1.5em;
       font-size: 0.6em;
 
       button {
