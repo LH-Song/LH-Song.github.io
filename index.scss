@@ -66,13 +66,17 @@ aside {
   position: fixed;
   display: flex;
   flex-direction: row;
-  width: 3vw;
+  width: 3%;
   height: 100%;
   // sidebar
   grid-area: sidebar;
   // sidebar
   margin-top: 1vh;
-  background-color: #0080ff00;
+  background-color: #0080fff1;
+  #sidebar:last-child {
+    color: #1060b1;
+    // margin-top: auto;
+  }
   .uil {
     color: silver;
     margin-left: 0.5vw;
