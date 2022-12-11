@@ -51,6 +51,7 @@ a:hover {
 
 body,
 html {
+  scroll-behavior: smooth;
   font-size: 1em;
   width: auto;
   height: 100vh;
@@ -276,7 +277,6 @@ section:nth-of-type(10) {
 }
 
 .servers_items {
- 
   gap: 0.5em;
   height: 100%;
   width: 100%;
@@ -507,14 +507,17 @@ section:nth-of-type(19) {
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect20 Contact_Us_Form_1 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(20) {
-  width: 100%;
-  height: 30vh;
+  width: auto;
+  height: 100%;
   grid-area: sect20;
   background-color: rgba(25, 25, 25, 1);
-  @include align-center();
+  
   div {
     margin: 1em 0;
+    @include align-center();
+    flex-direction: column;
   }
+
 }
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect21 Contact_Us_Form_2 ⬇️⬇️⬇️⬇️⬇️⬇️ -->
