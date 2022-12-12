@@ -103,7 +103,7 @@ html {
 //<!-- ⛔️⛔️⛔️⛔️⛔️⛔️ ⛔️⛔️⛔️⛔️⛔️⛔️ -->
 
 .side-navbar {
-  z-index: 200;
+  z-index: 300;
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
@@ -131,15 +131,15 @@ html {
 .side-nav-link {
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 3.8rem;
   color: brown;
   text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
+  filter: grayscale(100%) opacity(0.9);
   transition: 600ms;
 }
 
 .side-nav-link:hover {
-  filter: grayscale(0%) opacity(1);
+  filter: grayscale(0%) opacity(0.9);
   background: silver;
   color: brown;
 }
@@ -150,19 +150,21 @@ html {
 }
 
 .side-nav-link i {
-  width: 2rem;
-  min-width: 2rem;
-  margin: 0 1.5rem;
+  width: 1rem;
+  min-width: 1rem;
+  margin: 0 0.5rem;
+  font-size: 1.2em;
 }
 
 .logo {
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   text-align: center;
   color: brown;
-  background: silver;
-  font-size: 1.5rem;
+  background: rgba(192, 192, 192, 0);
+  
+  font-size: 1.2rem;
   letter-spacing: 0.3ch;
   width: 100%;
 }
@@ -185,28 +187,27 @@ html {
 
 /* default displays */
 
-  .side-navbar {
-    top: 0;
-    width: 5rem;
-    height: 100vh;
-  }
+.side-navbar {
+  top: 0;
+  width: 3.2rem;
+  height: 100vh;
+}
 
-  .side-navbar:hover {
-    width: 16rem;
-  }
+.side-navbar:hover {
+  width: 8rem;
+}
 
-  .side-navbar:hover .side-link-text {
-    display: inline;
-  }
+.side-navbar:hover .side-link-text {
+  display: inline;
+}
 
-  .side-navbar:hover .logo i {
-    margin-left: 11rem;
-  }
+.side-navbar:hover .logo i {
+  margin-left: 6.5rem;
+}
 
-  .side-navbar:hover .logo-text {
-    left: 0px;
-  }
-
+.side-navbar:hover .logo-text {
+  left: 0px;
+}
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect1 Intro_page_background  ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(1) {
