@@ -600,20 +600,22 @@ section:nth-of-type(26) {
     color: #fff;
     cursor: pointer;
     flex: 0.5;
-    margin: 10px;
+    margin: 0 10px;
     position: relative;
+    @include align-center();
     -webkit-transition: all 700ms ease-in;
+   
   }
   
   .categories-panel h3 {
-    font-size: 24px;
+    font-size: 1em;
     position: absolute;
-    bottom: -4vh;
-   text-align: center;
-   left: 22%;
-    margin: 0;
+    bottom: -10vh;
+  display: inline-block;
+    
     opacity: 0;
     color: silver;
+    
   }
   
   .categories-panel.active {
