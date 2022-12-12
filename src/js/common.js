@@ -39,3 +39,19 @@ export function changeNavBg() {
 // // --- Navbar Bg Changing Start---//
 
 // // --- Navbar Bg Changing Close--//
+
+
+const panels = document.querySelectorAll('.categories-panel')
+
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add('active')
+    })
+})
+
+export function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+    })
+}

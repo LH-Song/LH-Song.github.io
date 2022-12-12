@@ -290,7 +290,6 @@ section:nth-of-type(2) {
   grid-area: sect2;
   background-color: rgb(40, 40, 40);
   @include align-center;
-
   // margin: 1em;
   div {
     @include align-center;
@@ -333,6 +332,11 @@ section:nth-of-type(3) {
       @include span-button();
       font-size: 1em;
       margin-bottom: 1em;
+    }
+    #skills-content{
+      height: 0vh;
+      width: 100%;
+      background-color: #1060b1;
     }
   }
 }
@@ -398,7 +402,8 @@ section:nth-of-type(10) {
 }
 
 .servers_items {
-  gap: 0.5em;
+  box-shadow: 0.5em 0.5em 0.1em rgba(0, 0, 0, 0.2);
+  gap: 0.1em;
   height: 100%;
   width: 100%;
   padding: 0.2em 0.5em 0.6em 1.4em;
@@ -406,6 +411,9 @@ section:nth-of-type(10) {
   background-color: rgba(25, 25, 25, 1);
   display: flex;
   flex-direction: row;
+  // border: 1px solid silver;
+  // border-radius: 1em;
+
   i {
     font-size: 2em;
     color: brown;
@@ -540,7 +548,7 @@ section:nth-of-type(14) {
     text-align: center;
     max-width: 75vw;
     h2 {
-      margin-bottom: 1em;
+      margin-bottom: 0em;
       font-family: 'Exo', sans-serif;
       font-size: 1.5em;
     }
@@ -553,6 +561,9 @@ section:nth-of-type(14) {
   background-color: rgba(25, 25, 25, 1);
   @include align-center;
   flex-direction: column;
+  // 
+  
+  // 
 }
 
 // <!-- ⛔️⛔️⛔️⛔️⛔️⛔️ ⛔️⛔️⛔️⛔️⛔️⛔️ -->
@@ -568,7 +579,58 @@ section:nth-of-type(26) {
     background-color: rgba(25, 25, 25, 1);
     @include align-center();
   }
+  // 
+  .categories-container {
+    display: flex;
+    width: 90vw;
+  }
+  
+  .categories-panel {
+    box-shadow: 0.5em 0.5em 0.1em rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+  }
+  
+  .categories-panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+  
+  .categories-panel.active {
+    flex: 5;
+  }
+  
+  .categories-panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+  
+  @media (max-width: 480px) {
+    .categories-container {
+      width: 100vw;
+    }
+  
+    .categories-panel:nth-of-type(4),
+    .categories-panel:nth-of-type(5) {
+      display: none;
+    }
+  }
+  // 
 }
+
 
 // <!-- ⬇️⬇️⬇️⬇️⬇️⬇️ sect15 Blog_Header ⬇️⬇️⬇️⬇️⬇️⬇️ -->
 section:nth-of-type(15) {
