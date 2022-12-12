@@ -131,7 +131,7 @@ html {
 .side-nav-link {
   display: flex;
   align-items: center;
-  height: 3.8rem;
+  height: 1.6rem;
   color: brown;
   text-decoration: none;
   filter: grayscale(100%) opacity(0.9);
@@ -146,14 +146,16 @@ html {
 
 .side-link-text {
   display: none;
-  margin-left: 1rem;
+  margin-left: 0;
+  font-size: 0.4em;
+  padding-top: 0.2em;
 }
 
 .side-nav-link i {
   width: 1rem;
   min-width: 1rem;
-  margin: 0 0.5rem;
-  font-size: 1.2em;
+  margin: 0 0.2rem;
+  font-size: 0.6em;
 }
 
 .logo {
@@ -175,6 +177,8 @@ html {
 }
 
 .logo-text {
+  padding: 0.2em 0 0 0.5em;
+  font-size: 0.6em;
   display: inline;
   position: absolute;
   left: -999px;
@@ -189,12 +193,12 @@ html {
 
 .side-navbar {
   top: 0;
-  width: 3.2rem;
+  width: 2rem;
   height: 100vh;
 }
 
 .side-navbar:hover {
-  width: 8rem;
+  width: 4rem;
 }
 
 .side-navbar:hover .side-link-text {
@@ -202,7 +206,7 @@ html {
 }
 
 .side-navbar:hover .logo i {
-  margin-left: 6.5rem;
+  margin-left: 2.8rem;
 }
 
 .side-navbar:hover .logo-text {
