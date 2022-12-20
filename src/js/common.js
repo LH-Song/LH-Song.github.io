@@ -17,10 +17,12 @@ export function typeWrite() {
 
   setTimeout(typeWrite, speed)
 }
+
+
 const navbar = document.getElementById('navbar')
 export const scrollContainer = document.getElementById('main')
 export function changeNavBg() {
-  // const scrollValue = scrollContainer.scrollTop
+  
   const scrollValue = scrollContainer.scrollTop
   if (scrollValue < 50) {
     navbar.classList.remove('nav-bg')
@@ -28,6 +30,7 @@ export function changeNavBg() {
     navbar.classList.add('nav-bg')
   }
   console.log(scrollValue)
+  console.log('1');
 }
 // export default autoWriteText
 // --- autoTypedText Method ONE Close--//
