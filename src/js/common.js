@@ -18,11 +18,9 @@ export function typeWrite() {
   setTimeout(typeWrite, speed)
 }
 
-
 const navbar = document.getElementById('navbar')
 export const scrollContainer = document.getElementById('main')
 export function changeNavBg() {
-  
   const scrollValue = scrollContainer.scrollTop
   if (scrollValue < 50) {
     navbar.classList.remove('nav-bg')
@@ -30,8 +28,26 @@ export function changeNavBg() {
     navbar.classList.add('nav-bg')
   }
   console.log(scrollValue)
-  console.log('1');
+  console.log('1')
 }
+
+const productContainers = [...document.querySelectorAll('.product-container')]
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')]
+const preBtn = [...document.querySelectorAll('.pre-btn')]
+
+productContainers.forEach((item, i) => {
+  let containerDimensions = item.getBoundingClientRect()
+  let containerWidth = containerDimensions.width
+
+  nxtBtn[i].addEventListener('click', () => {
+    item.scrollLeft += containerWidth
+  })
+
+  preBtn[i].addEventListener('click', () => {
+    item.scrollLeft -= containerWidth
+  })
+})
+
 // export default autoWriteText
 // --- autoTypedText Method ONE Close--//
 
@@ -43,18 +59,17 @@ export function changeNavBg() {
 
 // // --- Navbar Bg Changing Close--//
 
-
 const panels = document.querySelectorAll('.categories-panel')
 
 panels.forEach(panel => {
-    panel.addEventListener('click', () => {
-        removeActiveClasses()
-        panel.classList.add('active')
-    })
+  panel.addEventListener('click', () => {
+    removeActiveClasses()
+    panel.classList.add('active')
+  })
 })
 
 export function removeActiveClasses() {
-    panels.forEach(panel => {
-        panel.classList.remove('active')
-    })
+  panels.forEach(panel => {
+    panel.classList.remove('active')
+  })
 }
